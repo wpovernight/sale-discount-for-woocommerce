@@ -69,7 +69,6 @@ class WPO_WC_SPAD {
 		$this->define( 'WPO_WC_SPAD_MIN_PHP_VER', '7.0' );
 		$this->define( 'WPO_WC_SPAD_MIN_WC_VER',  '4.0' );
 		$this->define( 'WPO_WC_SPAD_MIN_WP_VER',  '5.0' );
-		$this->define( 'WPO_WC_SPAD_NAME', __( 'Sale price as order discount for WooCommerce', 'sale-discount-for-woocommerce' ) );
 
 		add_action( 'admin_notices', [ $this, 'admin_notices' ], 8 );
 		add_action( 'plugins_loaded', [ $this, 'load' ], 8 );
@@ -187,7 +186,8 @@ class WPO_WC_SPAD {
 	public function check() {
 		$passed = true;
 
-		$inactive_text = sprintf(__( '<strong>%s</strong> is <strong>inactive</strong>.', 'sale-discount-for-woocommerce' ), WPO_WC_SPAD_NAME );
+		$plugin_name = __( 'Sale price as order discount for WooCommerce', 'sale-discount-for-woocommerce' );
+		$inactive_text = sprintf(__( '<strong>%s</strong> is <strong>inactive</strong>.', 'sale-discount-for-woocommerce' ), $plugin_name );
 
 		if ( version_compare( phpversion(), WPO_WC_SPAD_MIN_PHP_VER, '<' ) ) {
 			$this->errors[] = sprintf( __( '%1$s The plugin requires PHP version %2$s or newer.', 'sale-discount-for-woocommerce' ), $inactive_text, WPO_WC_SPAD_MIN_PHP_VER );
