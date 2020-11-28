@@ -79,9 +79,13 @@ class WPO_WC_SPAD {
 	 */
 	public function load() {
 		if ( $this->check() ) {
-			add_filter( 'woocommerce_ajax_order_item', [ $this, 'ajax_order_item' ], 10, 4 );
-			add_filter( 'woocommerce_checkout_create_order_line_item', [ $this, 'checkout_create_order_line_item' ], 10, 4 );
-			add_filter( 'woocommerce_checkout_create_order', [ $this, 'maybe_recalculate_order' ], 10, 2 );
+			if ( apply_filters( 'wpo_wc_sale_discount_enable_for_backend', true ) ) {
+				add_filter( 'woocommerce_ajax_order_item', [ $this, 'ajax_order_item' ], 10, 4 );
+			}
+			if ( apply_filters( 'wpo_wc_sale_discount_enable_for_checkout', true ) ) {
+				add_filter( 'woocommerce_checkout_create_order_line_item', [ $this, 'checkout_create_order_line_item' ], 10, 4 );
+				add_filter( 'woocommerce_checkout_create_order', [ $this, 'maybe_recalculate_order' ], 10, 2 );
+			}
 		}
 	}
 
