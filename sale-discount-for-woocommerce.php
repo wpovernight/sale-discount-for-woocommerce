@@ -145,7 +145,7 @@ class WPO_WC_SPAD {
 			$product = $item->get_product();
 
 			// bail if the product is not on sale
-			if ( !is_callable( [ $product, 'is_on_sale' ] ) || !$product->is_on_sale() ) {
+			if ( ! is_callable( [ $product, 'is_on_sale' ] ) || ! $product->is_on_sale() ) {
 				return $item;
 			}
 
