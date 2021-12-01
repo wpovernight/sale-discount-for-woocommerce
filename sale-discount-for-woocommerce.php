@@ -14,7 +14,7 @@
  * Domain Path:       /languages
  *
  * WC requires at least: 4.0
- * WC tested up to:      4.8
+ * WC tested up to:      6.0
  */
 
 defined( 'ABSPATH' ) || exit;
