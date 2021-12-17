@@ -43,7 +43,7 @@ svn status
 
 # Commit files to wordpress.org.
 echo "➤ Committing files..."
-svn ci  --message "Release $TAG" \
+svn ci  --message "Release $TAG_NAME" \
         --username $SVN_USERNAME \
         --password $SVN_PASSWORD \
         --non-interactive

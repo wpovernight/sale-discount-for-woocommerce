@@ -1,10 +1,9 @@
 name: "WordPress.org SVN deployment"
 
 on:
-  push:
-    tags:
-      - "v*"
-      - "!**-beta**"
+  release:
+    types: [released]
+
 jobs:
   build:
 
