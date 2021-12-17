@@ -70,6 +70,7 @@ class WPO_WC_SPAD {
 		$this->define( 'WPO_WC_SPAD_MIN_WC_VER',  '4.0' );
 		$this->define( 'WPO_WC_SPAD_MIN_WP_VER',  '5.0' );
 
+		add_action( 'plugins_loaded', [ $this, 'load_textdomain' ], 8 );
 		add_action( 'admin_notices', [ $this, 'admin_notices' ], 8 );
 		add_action( 'plugins_loaded', [ $this, 'load' ], 8 );
 	}
@@ -192,16 +193,20 @@ class WPO_WC_SPAD {
 		$passed = true;
 
 		$plugin_name = __( 'Sale price as order discount for WooCommerce', 'sale-discount-for-woocommerce' );
-		$inactive_text = sprintf(__( '<strong>%s</strong> is <strong>inactive</strong>.', 'sale-discount-for-woocommerce' ), $plugin_name );
+		/* translators: plugin name */
+		$inactive_text = sprintf( __( '<strong>%s</strong> is <strong>inactive</strong>.', 'sale-discount-for-woocommerce' ), $plugin_name );
 
 		if ( version_compare( phpversion(), WPO_WC_SPAD_MIN_PHP_VER, '<' ) ) {
-			$this->errors[] = sprintf( __( '%1$s The plugin requires PHP version %2$s or newer.', 'sale-discount-for-woocommerce' ), $inactive_text, WPO_WC_SPAD_MIN_PHP_VER );
+			/* translators: min PHP version */
+			$this->errors[] = $inactive_text . ' ' . sprintf( __( 'The plugin requires PHP version %s or newer.', 'sale-discount-for-woocommerce' ), WPO_WC_SPAD_MIN_PHP_VER );
 			$passed         = false;
 		} elseif ( ! $this->is_woocommerce_version_ok() ) {
-			$this->errors[] = sprintf( __( '%1$s The plugin requires WooCommerce version %2$s or newer.', 'sale-discount-for-woocommerce' ), $inactive_text, WPO_WC_SPAD_MIN_WC_VER );
+			/* translators: min WooCommerce version */
+			$this->errors[] = $inactive_text . ' ' . sprintf( __( 'The plugin requires WooCommerce version %s or newer.', 'sale-discount-for-woocommerce' ), WPO_WC_SPAD_MIN_WC_VER );
 			$passed         = false;
 		} elseif ( ! $this->is_wp_version_ok() ) {
-			$this->errors[] = sprintf( __( '%1$s The plugin requires WordPress version %2$s or newer.', 'sale-discount-for-woocommerce' ), $inactive_text, WPO_WC_SPAD_MIN_WP_VER );
+			/* translators: min WordPress version */
+			$this->errors[] = $inactive_text . ' ' . sprintf( __( 'The plugin requires WordPress version %s or newer.', 'sale-discount-for-woocommerce' ), WPO_WC_SPAD_MIN_WP_VER );
 			$passed         = false;
 		}
 
@@ -235,6 +240,15 @@ class WPO_WC_SPAD {
 		}
 		return version_compare( $wp_version, WPO_WC_SPAD_MIN_WP_VER, '>=' );
 	}
+
+		/**
+		* Load plugin textdomain.
+		*
+		* @return void
+		*/
+		public function load_textdomain() {
+			load_plugin_textdomain( 'sale-discount-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		}
 
 	/**
 	 * Displays any errors as admin notices.
