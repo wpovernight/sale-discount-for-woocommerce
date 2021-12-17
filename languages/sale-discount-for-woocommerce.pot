@@ -1,62 +1,56 @@
-#, fuzzy
+# Copyright (C) 2021 WP Overnight
+# This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: Sale price as order discount for WooCommerce\n"
-"POT-Creation-Date: 2020-11-28 10:25+0100\n"
-"PO-Revision-Date: 2020-11-28 10:25+0100\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"Project-Id-Version: Sale price as order discount for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sale-discount-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: sale-discount-for-woocommerce.php\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"POT-Creation-Date: 2021-12-17T16:23:36+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: sale-discount-for-woocommerce\n"
 
-#. Plugin Name of the plugin/theme
-#: sale-discount-for-woocommerce.php:72
+#. Plugin Name of the plugin
+#: sale-discount-for-woocommerce.php:195
 msgid "Sale price as order discount for WooCommerce"
 msgstr ""
 
-#: sale-discount-for-woocommerce.php:190
-#, php-format
-msgid "<strong>%s</strong> is <strong>inactive</strong>."
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/sale-discount-for-woocommerce/"
 msgstr ""
 
-#: sale-discount-for-woocommerce.php:193
-#, php-format
-msgid "%1$s The plugin requires PHP version %2$s or newer."
+#. Description of the plugin
+msgid "Stores the regular price of products in the order data so that the customer sees the discount they received in email/account/invoice"
 msgstr ""
 
-#: sale-discount-for-woocommerce.php:196
-#, php-format
-msgid "%1$s The plugin requires WooCommerce version %2$s or newer."
+#. Author of the plugin
+msgid "WP Overnight"
 msgstr ""
 
-#: sale-discount-for-woocommerce.php:199
-#, php-format
-msgid "%1$s The plugin requires WordPress version %2$s or newer."
-msgstr ""
-
-#. Plugin URI of the plugin/theme
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
 msgid "https://wpovernight.com"
 msgstr ""
 
-#. Description of the plugin/theme
-msgid ""
-"Stores the regular price of products in the order data so that the customer "
-"sees the discount they received in email/account/invoice"
+#. translators: plugin name
+#: sale-discount-for-woocommerce.php:197
+msgid "<strong>%s</strong> is <strong>inactive</strong>."
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "WP Overnight"
+#. translators: min PHP version
+#: sale-discount-for-woocommerce.php:201
+msgid "The plugin requires PHP version %s or newer."
+msgstr ""
+
+#. translators: min WooCommerce version
+#: sale-discount-for-woocommerce.php:205
+msgid "The plugin requires WooCommerce version %s or newer."
+msgstr ""
+
+#. translators: min WordPress version
+#: sale-discount-for-woocommerce.php:209
+msgid "The plugin requires WordPress version %s or newer."
 msgstr ""
