@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Sale price as order discount for WooCommerce ===
 Contributors: wpovernight
 Donate link: https://wpovernight.com/
 Tags: woocommerce, regular price, discount, sale price
