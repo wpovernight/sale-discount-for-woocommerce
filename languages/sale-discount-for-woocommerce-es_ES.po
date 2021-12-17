@@ -1,0 +1,64 @@
+# Copyright (C) 2021 WP Overnight
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sale price as order discount for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sale-discount-for-"
+"woocommerce\n"
+"POT-Creation-Date: 2021-12-17T16:23:36+00:00\n"
+"PO-Revision-Date: 2021-12-17 12:25-0400\n"
+"Last-Translator: WP Overnight <support@wpovernight.com>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Domain: sale-discount-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: sale-discount-for-woocommerce.php:195
+msgid "Sale price as order discount for WooCommerce"
+msgstr "Precio de venta como descuento en el pedido WooCommerce"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/sale-discount-for-woocommerce/"
+msgstr "https://es.wordpress.org/plugins/sale-discount-for-woocommerce/"
+
+#. Description of the plugin
+msgid ""
+"Stores the regular price of products in the order data so that the customer "
+"sees the discount they received in email/account/invoice"
+msgstr ""
+"Almacena el precio regular de los productos en los datos del pedido para que "
+"el cliente vea el descuento que recibió en el correo electrónico, su cuenta "
+"y la factura"
+
+#. Author of the plugin
+msgid "WP Overnight"
+msgstr "WP Overnight"
+
+#. Author URI of the plugin
+msgid "https://wpovernight.com"
+msgstr "https://wpovernight.com"
+
+#. translators: plugin name
+#: sale-discount-for-woocommerce.php:197
+msgid "<strong>%s</strong> is <strong>inactive</strong>."
+msgstr "<strong>%s</strong> está <strong>inactivo</strong>."
+
+#. translators: min PHP version
+#: sale-discount-for-woocommerce.php:201
+msgid "The plugin requires PHP version %s or newer."
+msgstr "El plugin requiere la versión %s de PHP o más reciente."
+
+#. translators: min WooCommerce version
+#: sale-discount-for-woocommerce.php:205
+msgid "The plugin requires WooCommerce version %s or newer."
+msgstr "El plugin requiere la versión %s o más reciente de WooCommerce."
+
+#. translators: min WordPress version
+#: sale-discount-for-woocommerce.php:209
+msgid "The plugin requires WordPress version %s or newer."
+msgstr "El plugin requiere la versión %s o más reciente de WordPress."
