@@ -241,14 +241,14 @@ class WPO_WC_SPAD {
 		return version_compare( $wp_version, WPO_WC_SPAD_MIN_WP_VER, '>=' );
 	}
 
-		/**
-		* Load plugin textdomain.
-		*
-		* @return void
-		*/
-		public function load_textdomain() {
-			load_plugin_textdomain( 'sale-discount-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-		}
+	/**
+	* Load plugin textdomain.
+	*
+	* @return void
+	*/
+	public function load_textdomain() {
+		load_plugin_textdomain( 'sale-discount-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	}
 
 	/**
 	 * Displays any errors as admin notices.
