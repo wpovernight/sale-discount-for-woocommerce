@@ -80,6 +80,7 @@ class WPO_WC_SPAD {
 	 */
 	public function load() {
 		if ( $this->check() ) {
+			add_action( 'before_woocommerce_init', [ $this, 'declare_wc_hpos_compatibility' ] );
 			add_filter( 'woocommerce_ajax_order_item', [ $this, 'ajax_order_item' ], 10, 4 );
 			add_filter( 'woocommerce_checkout_create_order_line_item', [ $this, 'checkout_create_order_line_item' ], 10, 4 );
 			add_filter( 'woocommerce_checkout_create_order', [ $this, 'maybe_recalculate_order' ], 10, 2 );
@@ -226,6 +227,17 @@ class WPO_WC_SPAD {
 			return true;
 		}
 		return version_compare( WC()->version, WPO_WC_SPAD_MIN_WC_VER, '>=' );
+	}
+
+	/**
+	 * Declares compatibility with WooCommerce HPOS.
+	 *
+	 * @return void
+	 */
+	public function declare_wc_hpos_compatibility() {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
 	}
 
 	/**
