@@ -1,20 +1,20 @@
 <?php
 /**
- * Plugin Name:       Sale price as order discount for WooCommerce
- * Plugin URI:        https://wordpress.org/plugins/sale-discount-for-woocommerce/
- * Description:       Stores the regular price of products in the order data so that the customer sees the discount they received in email/account/invoice
- * Version:           1.1.1
- * Requires at least: 5.0
- * Requires PHP:      7.3
- * Author:            WP Overnight
- * Author URI:        https://wpovernight.com
- * License:           GPLv3
- * License URI:       http://www.gnu.org/licenses/gpl-3.0
- * Text Domain:       sale-discount-for-woocommerce
- * Domain Path:       /languages
+ * Plugin Name:          Sale price as order discount for WooCommerce
+ * Plugin URI:           https://wordpress.org/plugins/sale-discount-for-woocommerce/
+ * Description:          Stores the regular price of products in the order data so that the customer sees the discount they received in email/account/invoice
+ * Version:              1.1.2
+ * Requires at least:    5.0
+ * Requires PHP:         7.3
+ * Author:               WP Overnight
+ * Author URI:           https://wpovernight.com
+ * License:              GPLv3
+ * License URI:          http://www.gnu.org/licenses/gpl-3.0
+ * Text Domain:          sale-discount-for-woocommerce
+ * Domain Path:          /languages
  *
  * WC requires at least: 4.0
- * WC tested up to:      7.1
+ * WC tested up to:      7.6
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -26,7 +26,7 @@ class WPO_WC_SPAD {
 	 *
 	 * @var string
 	 */
-	public $version = '1.1.1';
+	public $version = '1.1.2';
 
 	/**
 	 * Whether to recalculate checkout order totals (when an order contained a sale product).
