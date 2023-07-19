@@ -3,7 +3,7 @@ Contributors: wpovernight
 Donate link: https://wpovernight.com/
 Tags: woocommerce, regular price, discount, sale price
 Requires at least: 5.0
-Tested up to: 6.2
+Tested up to: 6.3
 Requires PHP: 7.3
 Stable tag: 1.1.2
 License: GPLv2 or later
