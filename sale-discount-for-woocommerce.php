@@ -3,7 +3,7 @@
  * Plugin Name:          Sale price as order discount for WooCommerce
  * Plugin URI:           https://wordpress.org/plugins/sale-discount-for-woocommerce/
  * Description:          Stores the regular price of products in the order data so that the customer sees the discount they received in email/account/invoice
- * Version:              1.1.2
+ * Version:              1.1.3
  * Requires at least:    5.0
  * Requires PHP:         7.3
  * Author:               WP Overnight
@@ -14,7 +14,7 @@
  * Domain Path:          /languages
  *
  * WC requires at least: 4.0
- * WC tested up to:      7.6
+ * WC tested up to:      8.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -26,7 +26,7 @@ class WPO_WC_SPAD {
 	 *
 	 * @var string
 	 */
-	public $version = '1.1.2';
+	public $version = '1.1.3';
 
 	/**
 	 * Whether to recalculate checkout order totals (when an order contained a sale product).
