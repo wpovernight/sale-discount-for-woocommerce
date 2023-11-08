@@ -5,7 +5,7 @@ Tags: woocommerce, regular price, discount, sale price
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.3
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,9 @@ This project is hosted on github: https://github.com/wpovernight/sale-discount-f
 If you want to contribute to the code, feel free to submit a PR. You can also open issues on Github, although we encourage you to open a ticket in the support forum here on WordPress.org first if you're not absolutely sure something is a bug.
 
 == Changelog ==
+
+= 1.1.4 (2023-11-08) =
+* Tested up to WooCommerce 8.3 & WordPress 6.4
 
 = 1.1.3 (2023-08-09) =
 * Tested up to WooCommerce 8.0 & WordPress 6.3
