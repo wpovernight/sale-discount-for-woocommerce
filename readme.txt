@@ -3,9 +3,9 @@ Contributors: wpovernight
 Donate link: https://wpovernight.com/
 Tags: woocommerce, regular price, discount, sale price
 Requires at least: 5.0
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.3
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ If you want to contribute to the code, feel free to submit a PR. You can also op
 
 == Changelog ==
 
+= 1.1.5 (2024-03-20) =
+* Translations: updated translation template (POT)
+* Tested up to WooCommerce 8.7 & WordPress 6.5
+
 = 1.1.4 (2023-11-08) =
 * Tested up to WooCommerce 8.3 & WordPress 6.4
 
@@ -50,7 +54,7 @@ If you want to contribute to the code, feel free to submit a PR. You can also op
 
 = 1.0.1 =
 * Fix: Loading textdomain
-* Translations: Added Spanish 🇪🇸
+* Translations: Added Spanish
 
 = 1.0.0 =
-* First public release 🎉
+* First public release
