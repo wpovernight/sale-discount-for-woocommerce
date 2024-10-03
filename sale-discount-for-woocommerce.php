@@ -70,9 +70,9 @@ class WPO_WC_SPAD {
 		$this->define( 'WPO_WC_SPAD_MIN_WC_VER',  '4.0' );
 		$this->define( 'WPO_WC_SPAD_MIN_WP_VER',  '5.0' );
 
-		add_action( 'init', [ $this, 'load_textdomain' ], 8 );
-		add_action( 'admin_notices', [ $this, 'admin_notices' ], 8 );
-		add_action( 'plugins_loaded', [ $this, 'load' ], 8 );
+		add_action( 'init', [ $this, 'load_textdomain' ], 9 );
+		add_action( 'init', [ $this, 'load' ] );
+		add_action( 'admin_notices', [ $this, 'admin_notices' ] );
 	}
 
 	/**
