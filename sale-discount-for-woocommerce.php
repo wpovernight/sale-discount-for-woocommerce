@@ -73,6 +73,7 @@ class WPO_WC_SPAD {
 		add_action( 'init', [ $this, 'load_textdomain' ], 9 );
 		add_action( 'init', [ $this, 'load' ] );
 		add_action( 'admin_notices', [ $this, 'admin_notices' ] );
+		add_action( 'before_woocommerce_init', [ $this, 'declare_wc_hpos_compatibility' ] );
 	}
 
 	/**
@@ -80,7 +81,6 @@ class WPO_WC_SPAD {
 	 */
 	public function load() {
 		if ( $this->check() ) {
-			add_action( 'before_woocommerce_init', [ $this, 'declare_wc_hpos_compatibility' ] );
 			add_filter( 'woocommerce_ajax_order_item', [ $this, 'ajax_order_item' ], 10, 4 );
 			add_filter( 'woocommerce_checkout_create_order_line_item', [ $this, 'checkout_create_order_line_item' ], 10, 4 );
 			add_filter( 'woocommerce_checkout_create_order', [ $this, 'maybe_recalculate_order' ], 10, 2 );
