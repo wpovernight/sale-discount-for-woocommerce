@@ -6,10 +6,10 @@ Requires at least: 5.0
 Tested up to: 6.6
 Requires PHP: 7.3
 Stable tag: 1.1.8
-License: GPLv2 or later
+License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Stores the regular price of products in the order data so that the customer sees the discount they received in email/account/invoice when an item was on sale
+Saves product regular price in order data to show customers the discount received in email, account, and invoice when items are on sale.
 
 == Description ==
 

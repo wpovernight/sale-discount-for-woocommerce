@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:          Sale price as order discount for WooCommerce
- * Plugin URI:           https://wordpress.org/plugins/sale-discount-for-woocommerce/
+ * Plugin URI:           https://wpovernight.com
  * Description:          Stores the regular price of products in the order data so that the customer sees the discount they received in email/account/invoice
  * Version:              1.1.8
  * Requires at least:    5.0
