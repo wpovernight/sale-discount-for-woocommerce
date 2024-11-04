@@ -3,7 +3,7 @@
  * Plugin Name:          Sale price as order discount for WooCommerce
  * Plugin URI:           https://wpovernight.com
  * Description:          Stores the regular price of products in the order data so that the customer sees the discount they received in email/account/invoice
- * Version:              1.1.9
+ * Version:              1.1.10
  * Requires at least:    5.0
  * Requires PHP:         7.3
  * Author:               WP Overnight
@@ -26,7 +26,7 @@ class WPO_WC_SPAD {
 	 *
 	 * @var string
 	 */
-	public $version = '1.1.9';
+	public $version = '1.1.10';
 
 	/**
 	 * Whether to recalculate checkout order totals (when an order contained a sale product).
