@@ -24,6 +24,16 @@ svn update --set-depth infinity trunk
 echo "➤ Copying files..."
 rsync -rc --exclude-from="$GITHUB_WORKSPACE/.distignore" "$GITHUB_WORKSPACE/" trunk/ --delete --delete-excluded 
 
+# Detect and schedule additions and deletions in SVN
+svn status | grep '^[!?]' | while IFS= read -r line; do
+    status="${line:0:1}"
+    file="${line:8}"
+    if [ "$status" = "!" ]; then
+        svn delete "$file"
+    elif [ "$status" = "?" ]; then
+        svn add "$file"
+    fi
+done
 
 # Add everything and commit to SVN
 # The force flag ensures we recurse into subdirectories even if they are already added
