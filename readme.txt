@@ -3,9 +3,9 @@ Contributors: wpovernight
 Donate link: https://wpovernight.com/
 Tags: woocommerce, regular price, discount, sale price
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.1.10
+Stable tag: 1.1.11
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,10 @@ This project is hosted on github: https://github.com/wpovernight/sale-discount-f
 If you want to contribute to the code, feel free to submit a PR. You can also open issues on Github, although we encourage you to open a ticket in the support forum here on WordPress.org first if you're not absolutely sure something is a bug.
 
 == Changelog ==
+
+= 1.1.11 (2025-05-13) =
+* New: Minimum PHP version requirement updated to 7.4
+* Tested up to WooCommerce 9.8 & WordPress 6.8
 
 = 1.1.10 (2024-11-04) =
 * Fix: remove files from SVN that were mistakenly left undeleted
