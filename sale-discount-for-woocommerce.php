@@ -5,7 +5,7 @@
  * Description:          Stores the regular price of products in the order data so that the customer sees the discount they received in email/account/invoice
  * Version:              1.1.10
  * Requires at least:    5.0
- * Requires PHP:         7.3
+ * Requires PHP:         7.4
  * Author:               WP Overnight
  * Author URI:           https://wpovernight.com
  * License:              GPLv3
@@ -66,7 +66,7 @@ class WPO_WC_SPAD {
 	 */
 	private function __construct() {
 		$this->define( 'WPO_WC_SPAD_VERSION', $this->version );
-		$this->define( 'WPO_WC_SPAD_MIN_PHP_VER', '7.0' );
+		$this->define( 'WPO_WC_SPAD_MIN_PHP_VER', '7.4' );
 		$this->define( 'WPO_WC_SPAD_MIN_WC_VER',  '4.0' );
 		$this->define( 'WPO_WC_SPAD_MIN_WP_VER',  '5.0' );
 
