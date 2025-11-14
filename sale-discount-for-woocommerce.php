@@ -154,13 +154,19 @@ class WPO_WC_SPAD {
 			// we only apply if the product has a regular price and a subtotal
 			if ( is_callable( [ $product, 'get_regular_price' ] ) && is_callable( [ $item, 'get_subtotal' ] ) ) {
 				// get regular price excluding tax
-				$regular_price = wc_get_price_excluding_tax( $product, [
-					'qty'   => $item->get_quantity(),
-					'price' => $product->get_regular_price(),
-				] );
-
-				$regular_price = apply_filters('wpo_wc_sale_discount_regular_price', $regular_price, $item, $order);
-
+				$regular_price = apply_filters(
+					'wpo_wc_sale_discount_regular_price',
+					wc_get_price_excluding_tax( $product, [
+							'qty'   => $item->get_quantity(),
+							'price' => $product->get_regular_price(),
+						]
+					),
+					$product,
+					$item,
+					$order,
+					$action
+				);
+				
 				// set regular price as before-discount item price
 				$item->set_subtotal( $regular_price );
 
