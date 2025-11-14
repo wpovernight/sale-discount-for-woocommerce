@@ -159,6 +159,8 @@ class WPO_WC_SPAD {
 					'price' => $product->get_regular_price(),
 				] );
 
+				$regular_price = apply_filters('wpo_wc_sale_discount_regular_price', $regular_price, $item, $order);
+
 				// set regular price as before-discount item price
 				$item->set_subtotal( $regular_price );
 
