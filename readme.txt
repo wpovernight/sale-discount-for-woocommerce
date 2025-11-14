@@ -5,7 +5,7 @@ Tags: woocommerce, regular price, discount, sale price
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.1.11
+Stable tag: 1.1.12
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,10 @@ This project is hosted on github: https://github.com/wpovernight/sale-discount-f
 If you want to contribute to the code, feel free to submit a PR. You can also open issues on Github, although we encourage you to open a ticket in the support forum here on WordPress.org first if you're not absolutely sure something is a bug.
 
 == Changelog ==
+
+= 1.1.12 (2025-11-14) =
+* New: Allow the theme to override regular price before setting the subtotal. Thanks to @scratchdigital
+* Tested up to WooCommerce 10.3 & WordPress 6.9
 
 = 1.1.11 (2025-05-13) =
 * New: Minimum PHP version requirement updated to 7.4

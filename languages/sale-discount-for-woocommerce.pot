@@ -2,21 +2,21 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sale price as order discount for WooCommerce 1.1.11\n"
+"Project-Id-Version: Sale price as order discount for WooCommerce 1.1.12\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sale-discount-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-13T08:03:21+00:00\n"
+"POT-Creation-Date: 2025-11-14T10:05:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: sale-discount-for-woocommerce\n"
 
 #. Plugin Name of the plugin
 #: sale-discount-for-woocommerce.php
-#: sale-discount-for-woocommerce.php:196
+#: sale-discount-for-woocommerce.php:204
 msgid "Sale price as order discount for WooCommerce"
 msgstr ""
 
@@ -37,25 +37,25 @@ msgid "WP Overnight"
 msgstr ""
 
 #. translators: plugin name
-#: sale-discount-for-woocommerce.php:198
+#: sale-discount-for-woocommerce.php:206
 #, php-format
 msgid "<strong>%s</strong> is <strong>inactive</strong>."
 msgstr ""
 
 #. translators: min PHP version
-#: sale-discount-for-woocommerce.php:202
+#: sale-discount-for-woocommerce.php:210
 #, php-format
 msgid "The plugin requires PHP version %s or newer."
 msgstr ""
 
 #. translators: min WooCommerce version
-#: sale-discount-for-woocommerce.php:206
+#: sale-discount-for-woocommerce.php:214
 #, php-format
 msgid "The plugin requires WooCommerce version %s or newer."
 msgstr ""
 
 #. translators: min WordPress version
-#: sale-discount-for-woocommerce.php:210
+#: sale-discount-for-woocommerce.php:218
 #, php-format
 msgid "The plugin requires WordPress version %s or newer."
 msgstr ""
